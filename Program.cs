@@ -31,6 +31,7 @@ namespace MultiMethodProgram
                     break;
 
                 case 2:
+                    lab2();
                     break;
 
                 case 3:
@@ -41,28 +42,17 @@ namespace MultiMethodProgram
                     Exit();
                     break;
 
-            static void Exit()
-            {
-                Console.WriteLine("This is the Exit Screen\nHit enter to Exit");
-                Console.ReadLine();
-                Thread.Sleep(500);
+                    static void Exit()
+                    {
+                        Console.WriteLine("This is the Exit Screen\nHit enter to Exit");
+                        Console.ReadLine();
+                        Thread.Sleep(500);
+                    }
             }
-        }
 
 
 
-        //LAB1
-
-
-
-
-
-
-
-
-
-
-        //LAB2
+            //LAB1
 
 
 
@@ -73,8 +63,39 @@ namespace MultiMethodProgram
 
 
 
-        //LAB3
-        static void Lab3()
+            //LAB2
+            static void lab2()
+            {
+                Console.Clear();
+                Console.WriteLine("How old are you?");
+                int age = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"You are {age * 365} days old and {age * 365 * 24} hours old");
+                Thread.Sleep(4000);
+                Console.Clear();
+                Console.WriteLine("Would you like to return to the main menu (y) or (n)");
+                char answer = char.Parse(Console.ReadLine());
+                if (answer == 'y')
+                {
+                    Main();
+                }
+                else
+                {
+                    lab2();
+                }
+
+
+            }
+
+
+
+
+
+
+
+
+
+            //LAB3
+            static void Lab3()
             {
                 string temp;
                 int userInput;

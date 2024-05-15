@@ -26,8 +26,7 @@ namespace MultiMethodProgram
             switch (userInput)
             {
                 case 1:
-
-
+                    Lab1();
                     break;
 
                 case 2:
@@ -54,7 +53,19 @@ namespace MultiMethodProgram
 
             //LAB1
 
-
+            static void Lab1()
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("***********************************");
+                Console.WriteLine("*    George, Caleb, and Zandar    *");
+                Console.WriteLine("*    BIT First Year               *");
+                Console.WriteLine("***********************************");
+                Console.WriteLine("Press any key");
+                Console.ReadLine();
+                Console.ResetColor();
+                Main();
+            }
 
 
 
